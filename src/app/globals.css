@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-space-900: #030712;
+  --color-space-950: #020617;
+  --color-neon-purple: #d946ef;
+  --color-neon-cyan: #22d3ee;
+  --color-neon-pink: #f472b6;
+
+  --font-geist-sans: var(--font-geist-sans);
+  --font-geist-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: #020617;
+  --foreground: #f8fafc;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans);
+  overflow-x: hidden;
+}
+
+/* Custom Glow Effects */
+.glow-purple {
+  box-shadow: 0 0 20px rgba(217, 70, 239, 0.3);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.3);
+}
+
+/* Animated Background Gradient */
+.bg-futuristic {
+  background: radial-gradient(circle at top left, rgba(217, 70, 239, 0.05), transparent),
+              radial-gradient(circle at bottom right, rgba(34, 211, 238, 0.05), transparent),
+              #020617;
+}
